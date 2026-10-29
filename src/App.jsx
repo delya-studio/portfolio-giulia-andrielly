@@ -55,7 +55,7 @@ function App() {
   return (
     <div data-phase={phase}>
 
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         
         {showSplash && <Splash language={language} />}
         <Routes>
