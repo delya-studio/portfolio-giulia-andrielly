@@ -1,4 +1,4 @@
-import './background.css'
+import "./Background.css";
 
 
 export function Background() {
