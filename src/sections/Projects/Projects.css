@@ -1,0 +1,228 @@
+@import url('../../variables.css');
+
+.section-projects{
+    max-width: 100%;
+    min-height: calc(100dvh - 20px);
+    height: auto;
+    padding: 7rem 2.5rem 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2.5rem;
+
+    width: 100%;
+    flex: 1;  
+}
+
+
+
+.content-header-project{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    width: 50%;
+}
+
+.content-header-project span{
+    font-family: var(--font-text);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    color: var(--text-two);
+}
+
+.line-project{
+    background-color: var(--text-two);
+    height: 1.8px;
+    width: 30%;
+}
+
+
+.projects-cards{
+    flex: 1;  
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.pagination-project{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: .6rem;
+    width: 100%;
+    margin-top: -5px;
+}
+
+
+
+.chevron{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+}
+.chevron svg{
+    width: 20px;
+    height: 20px;
+    
+}
+.chevron:disabled{
+    color: #d3d8c683;
+}
+
+.number-pagination{
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid var(--text);
+    border-radius: 60px;
+    color: var(--text);
+    font-size: 13px;
+    text-align: center;
+    padding: 9px;
+    width: 34px;
+
+}
+.number-pagination.active{
+    background-color: #545a4171;
+    border: none;
+}
+
+.pagination-dots{
+        color: var(--text);
+        font-size: 18px;
+        font-family: var(--font-text);
+        letter-spacing: 3px;
+}
+
+
+
+/* =====================
+   ULTRA WIDE 
+===================== */
+@media (min-width: 2561px) {
+    .section-projects{ width: 100%; padding: 28rem 20rem 8rem; }
+
+    .projects-container{ gap: 9rem; }
+
+    .content-header-project{ gap: 6rem; }
+    .content-header-project span{ font-size: 48px; letter-spacing: 8px; }
+
+    .projects-cards{ align-items: flex-start; gap: 6rem; }
+
+    .pagination-project{ gap: 1rem; }
+    .chevron svg{ width: 62px; height: 62px; }
+
+    .number-pagination{
+        border-radius: 100px;
+        font-size: 38px;
+        padding: 2.5rem;
+        width: 120px;
+    }
+    .pagination-dots{ font-size: 58px; letter-spacing: 5px; }
+}
+
+/* =====================
+   TELAS GRANDES 
+===================== */
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .section-projects{ width: 100%; padding: 18rem 9rem 5rem; }
+
+    .projects-container{ gap: 7rem; width: 95%; }
+
+    .content-header-project{ gap: 3rem; }
+    .content-header-project span{ font-size: 32px; letter-spacing: 3px; }
+
+    .projects-cards{ align-items: flex-start; gap: 3rem; }
+
+    .pagination-project{ gap: 1rem; }
+    .chevron svg{ width: 42px; height: 42px; }
+
+    .number-pagination{
+        border-radius: 80px;
+        font-size: 28px;
+        padding: 1.5rem;
+        width: 84px;
+    }
+    .pagination-dots{ font-size: 38px; letter-spacing: 5px; }
+}
+
+/* =====================
+   TELAS GRANDES E BAIXAS 
+===================== */
+@media (min-width: 1441px) and (max-width: 2560px) and (max-height: 1200px) {
+    .section-projects{ padding: 10rem 2.8rem 5rem; }
+
+    .projects-container{ gap: 5rem; }
+    .projects-cards{ gap: 2rem; }
+
+    .number-pagination{ font-size: 22px; padding: 1.2rem; width: 68px; }
+    .pagination-dots{ font-size: 22px; }
+}
+
+/* =====================
+   TABLETS
+===================== */
+@media (min-width: 600px) and (max-width: 1100px) {
+    .section-projects{ padding: 8rem 2.5rem 0; }
+
+    .projects-container{ height: 100%; gap: 4rem; justify-content: center; }
+
+    .content-header-project{ gap: 3rem; width: 100%; margin-left: 10px; }
+    .content-header-project span{ font-size: 22px; }
+    .line-project{ height: 1px; }
+
+    .projects-cards{ flex-direction: column; gap: 3rem; }
+
+    .pagination-project{ gap: 1rem; margin-bottom: 10rem; }
+
+    .number-pagination{ font-size: 18px; }
+    .pagination-dots{ font-size: 28px; letter-spacing: 5px; }
+}
+
+/* Tablets maiores (801px a 1100px): só o que muda */
+@media (min-width: 801px) and (max-width: 1100px) {
+    .chevron svg{ width: 40px; height: 40px; }
+    .number-pagination{ padding: 20px; width: 62px; }
+}
+
+/* Tablets menores (600px a 800px): só o que muda */
+@media (min-width: 600px) and (max-width: 800px) {
+    .chevron svg{ width: 30px; height: 30px; }
+    .number-pagination{ padding: 18px; width: 56px; }
+}
+
+/* =====================
+   MOBILE 
+===================== */
+@media (max-width: 480px) {
+    .section-projects{ padding: 9.2rem .8rem 0; }
+
+    .projects-container{ height: 100%; gap: 3rem; justify-content: center; }
+
+    .content-header-project{ gap: 1.2rem; width: 100%; margin-left: 10px; }
+    .content-header-project span{ font-size: 16px; }
+    .line-project{ height: 1px; width: 27%; }
+
+    .projects-cards{ flex-direction: column; }
+
+    .pagination-project{ gap: .5rem; }
+
+    .number-pagination{ padding: 10px; width: 36px; }
+    .pagination-dots{ font-size: 15px; }
+}
+
+/* Mobile baixo (até 480px de largura e 680px de altura): vem DEPOIS do mobile */
+@media (max-width: 480px) and (max-height: 680px) {
+    .section-projects{ min-height: 100dvh; padding: 9rem 1rem 0; }
+}

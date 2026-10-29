@@ -1,0 +1,407 @@
+@import url('/src/variables.css');
+
+
+.section-home{
+    max-width: 100%;
+    
+    padding: 8rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+}
+
+.content-text{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding: .8rem 6rem;
+    position: relative;
+    height: 57vh;
+    width: 100%;
+}
+
+
+
+.text-sub{
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--text-two);
+    text-transform: uppercase;
+    text-align: start;
+    width: 100%;
+}
+
+.lineOne{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3rem;
+
+    width: 100%;
+}
+
+.button-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .8rem;
+    
+
+    border: 1px solid var(--text);
+    border-radius: 60px;
+    padding: 0 5px 0 22px;
+    width: 22%;
+    height: 45px;
+}
+
+.text-buttom{
+    font-family: var(--font-text);
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: var(--text);
+    
+    border: none;
+    background-color: transparent;
+}
+
+.icon-bt{
+    border-radius: 60px;
+    background-color: var(--color-secundary);
+    padding: 8px 0;
+    width: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: opacity 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.icon-bt svg {
+  width: 18px;
+  height: 18px;
+  
+}
+
+.icon-bt:hover{
+    opacity: 0.9;
+}
+
+.title-home{
+    font-family: var(--font-main);
+    font-size: 6.5vw;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: multiply;
+}
+
+.lineTwo{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    margin-top: 10px;
+    width: 100%;
+}
+
+.lineTwo p{
+    font-family: var(--font-main);
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    line-height: 2;
+    text-align: right;
+    color: var(--text);
+
+    width: 27%;
+    
+}
+
+.button-mobile{
+    display: none;
+}
+
+.content-skills {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 2.1rem;
+    width: 100%;
+
+    margin-top: 0 auto;
+    
+}
+
+
+
+
+/* =====================
+   ULTRA WIDE 
+===================== */
+@media (min-width: 2561px) {
+    .section-home{
+        width: 100%;
+        padding: 30rem 10rem 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-container{ width: 95%; }
+
+    .content-text{ padding: 0; gap: 3rem; height: 56vh; }
+
+    .text-sub{ font-size: 2.4rem; letter-spacing: 6px; }
+
+    .lineOne{ gap: 8rem; }
+
+    .title-home{ font-size: 7vw; }
+
+    .button-content{
+        gap: 2rem;
+        border-width: 1.5px;
+        padding: 0 12px 0 62px;
+        width: 639px;
+        height: 120px;
+    }
+
+    .text-buttom{ font-size: 2.8rem; letter-spacing: 8px; }
+
+    .icon-bt{ padding: 20px 0; width: 124px; }
+    .icon-bt svg{ width: 60px; height: 60px; }
+
+    .lineTwo{ gap: 10rem; margin-top: 20px; }
+    .lineTwo p{ font-size: 2.8rem; letter-spacing: 6px; width: 25%; }
+
+    .content-skills{
+        padding: 5rem;
+        border-top-width: 1.5px;
+        border-bottom-width: 1.5px;
+    }
+}
+
+/* =====================
+   TELAS GRANDES 
+===================== */
+@media (min-width: 1441px) and (max-width: 2560px) {
+    .section-home{
+        width: 100%;
+        padding-inline: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-container{ width: 95%; justify-content: center; }
+
+    .content-text{
+        padding: 0 5rem;
+        justify-content: center;
+        gap: 3rem;
+        height: 65vh;
+    }
+
+    .text-sub{ font-size: 1.8rem; letter-spacing: 6px; }
+
+    .lineOne{ gap: 8rem; }
+
+    .title-home{ font-size: 7vw; }
+
+    .button-content{
+        gap: 2rem;
+        border-width: 1.5px;
+        padding: 0 10px 0 52px;
+        width: 389px;
+        height: 80px;
+    }
+
+    .text-buttom{ font-size: 1.7rem; }
+
+    .icon-bt{ padding: 10px 0; width: 80px; }
+    .icon-bt svg{ width: 38px; height: 38px; }
+
+    .lineTwo{ gap: 8rem;}
+    .lineTwo p{ font-size: 1.8rem; width: 22%; }
+
+    .content-skills{
+        padding: 3.2rem;
+        border-top-width: 1.5px;
+        border-bottom-width: 1.5px;
+    }
+}
+
+/* =====================
+   TELAS GRANDES E BAIXAS 
+===================== */
+@media (min-width: 1441px) and (max-width: 2560px) and (max-height: 1200px) {
+    .content-text{ padding: 0 3rem; height: 62vh; }
+
+    .title-home{ font-size: 6vw; }
+    .text-sub{ font-size: 1.4rem; }
+
+    .lineTwo p{ font-size: 1.5rem; width: 26%; }
+
+    .button-content{ padding: 0 10px 0 46px; width: 339px; height: 68px; }
+    .text-buttom{ font-size: 1.35rem; }
+
+    .icon-bt{ padding: 6px 0; width: 75px; }
+}
+
+/* =====================
+   TABLETS
+===================== */
+@media (min-width: 600px) and (max-width: 1100px) {
+    .section-home{ width: 100%; }
+
+    .content-text{
+        padding: 0 2rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .text-sub{ font-size: 18px; letter-spacing: 2.5px; margin-left: 5px; }
+
+    .lineOne{ gap: 0; }
+    .button-content{ display: none; }
+
+    .title-home{ font-size: 10vw; }
+
+    .lineTwo{ justify-content: start; gap: 2rem; margin-top: 12px; }
+    .lineTwo p{ font-size: 17px; width: 35%; position: relative; }
+
+    .button-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border: 1px solid var(--text);
+        border-radius: 60px;
+        margin-top: 28px;
+        padding: 0 5px 0 26px;
+        height: 48px;
+    }
+
+    .icon-bt{ padding: 9px 0; width: 58px; }
+    .icon-bt svg{ width: 20px; height: 20px; }
+
+    .content-skills{
+        padding: 3.2rem;
+        border-top-width: 1.5px;
+        border-bottom-width: 1.5px;
+    }
+}
+
+/* Tablets maiores (801px a 1100px): só o que muda */
+@media (min-width: 801px) and (max-width: 1100px) {
+    .section-home{ padding-inline: 2rem; }
+    .content-text{ height: 75vh; }
+    .button-mobile{ width: 268px; }
+    .text-buttom{ font-size: 18px; }
+}
+
+/* Tablets menores (600px a 800px): só o que muda */
+@media (min-width: 600px) and (max-width: 800px) {
+    .content-text{ height: 68vh; }
+    .button-mobile{ width: 248px; }
+    .text-buttom{ font-size: 16px; }
+    .lineTwo p{ font-size: 15px; width: 43%; position: relative; }
+}
+
+/* =====================
+   MOBILE (até 480px)
+===================== */
+@media (max-width: 480px) {
+    .section-home{
+        width: 100%;
+        padding: 12rem .8rem 0;
+        align-items: center;
+    }
+
+    .content-text{
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0;
+        min-height: clamp(400px, 58dvh, 750px);
+        height: auto;
+    }
+
+    .text-sub{ font-size: 13px; letter-spacing: 2.5px; margin-left: 5px; }
+
+    .lineOne{ gap: 0; }
+    .button-content{ display: none; }
+
+    .title-home{ font-size: 10.3vw; }
+
+    .lineTwo{
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: start;
+        gap: 2rem;
+        margin-top: 12px;
+    }
+
+    .lineTwo p{
+        font-size: 13px;
+        width: 69%;
+        position: relative;
+        margin-right: 30%;
+        text-align: left;
+    }
+
+    .button-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        border: 1px solid var(--text);
+        border-radius: 60px;
+        margin-top: 30px;
+        padding: 0 5px 0 26px;
+        width: 228px;
+        height: 43px;
+    }
+
+    .icon-bt{ width: 54px; }
+
+    .text-buttom{ font-size: 13.8px; }
+}
+
+/* Mobile alto (até 480px de largura, a partir de 860px de altura): vem DEPOIS do mobile */
+@media (max-width: 480px) and (min-height: 860px) {
+    .section-home{ padding: 13rem .8rem 0; }
+    .content-text{ min-height: clamp(590px, 55dvh, 750px); }
+    .button-mobile{ margin-top: 40px; }
+}
+
+/* Mobile baixo (até 480px de largura e 680px de altura): vem DEPOIS do mobile */
+@media (max-width: 480px) and (max-height: 680px) {
+    .section-home{ padding-top: 9rem; }
+    .content-text{ min-height: 370px; }
+    .title-home{ font-size: 10vw; }
+    .lineTwo p{ width: 80%; margin-right: 20%; }
+
+    .button-mobile{ width: 218px; height: 38px; }
+    .text-buttom{ font-size: 12px; }
+    .icon-bt{ padding: 5px 0; }
+    .content-skills{padding: 1.8rem;}
+}

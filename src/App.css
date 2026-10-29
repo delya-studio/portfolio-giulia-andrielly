@@ -1,0 +1,88 @@
+
+
+.glass-page { transition: opacity 1s ease; }
+
+[data-phase="splash"] .glass-page { opacity: 0; }
+
+header { transition: opacity 1s ease; }
+
+[data-phase="splash"] header,
+[data-phase="glass"] header { opacity: 0; }
+
+.blur-in { opacity: 0; }
+
+[data-phase="content"] .in-view .blur-in {
+    animation-name: blur-in;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+
+@keyframes blur-in {
+    from{
+        opacity: 0;
+        filter: blur(12px);
+        transform: translateY(-24px);
+    }
+    to{
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+}
+
+.delay-1 { animation-delay: 0.20s; }
+.delay-2 { animation-delay: 0.35s; }
+.delay-3 { animation-delay: 0.50s; }
+.delay-4 { animation-delay: 0.65s; }
+.delay-5 { animation-delay: 0.80s; }
+.delay-6 { animation-delay: 0.95s; }
+.delay-7 { animation-delay: 1.05s; }
+.delay-8 { animation-delay: 1.20s; }
+.delay-9 { animation-delay: 1.35s; }
+
+
+.fade-left { opacity: 0; }
+
+[data-phase="content"] .in-view .fade-left {
+    animation-name: fade-left;
+    animation-duration: 0.9s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+}
+
+@keyframes fade-left {
+    from{
+        opacity: 0;
+        ilter: blur(12px);
+        transform: translateX(-40px);
+    }
+    to{
+        opacity: 1;
+        ilter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+
+
+/* Tablets maiores */
+@media (min-width: 801px) and (max-width: 1100px) {
+    [data-phase="content"] .in-view .fade-left {
+        animation-name: blur-in;
+    }
+}
+
+/* Tablets menores */
+@media (min-width: 600px) and (max-width: 800px) {
+    [data-phase="content"] .in-view .fade-left {
+        animation-name: blur-in;
+    }
+}
+
+@media (max-width: 480px) and (max-width: 768px) {
+    [data-phase="content"] .in-view .fade-left {
+        animation-name: blur-in;
+    }
+}

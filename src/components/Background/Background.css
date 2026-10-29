@@ -1,0 +1,114 @@
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: #1d291a;
+  overflow: hidden;
+}
+
+
+
+.wave {
+  position: absolute;
+  width: 85%;
+  height: 65%;
+
+  border-radius: 50%;
+
+  filter: blur(65px);
+  
+  opacity: 0.85;
+
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.wave-1 {
+  
+  top: -25%;
+  left: -25%;
+  background: #74a06e;
+
+  animation: flow1 9s infinite alternate ease-in-out;
+}
+
+.wave-2 {
+  top: 15%;
+  right: -30%;
+  background: #364c3d;
+
+  animation: flow2 11s infinite alternate ease-in-out;
+}
+
+.wave-3 {
+  top: 45%;
+  left: -30%;
+  background: #556e58;
+
+  animation: flow3 10s infinite alternate ease-in-out;
+}
+
+.wave-4 {
+  bottom: -25%;
+  right: -25%;
+  background: #a5c990;
+
+  animation: flow4 13s infinite alternate ease-in-out;
+}
+
+@keyframes flow1 {
+  0% {
+    transform: translate(-10%, -15%) scale(1);
+  }
+
+  100% {
+    transform: translate(15%, 35%) scale(1.15);
+  }
+}
+
+@keyframes flow2 {
+  0% {
+    transform: translate(10%, 30%) scale(1.1);
+  }
+
+  100% {
+    transform: translate(-15%, -30%) scale(0.9);
+  }
+}
+
+@keyframes flow3 {
+  0% {
+    transform: translate(-15%, 25%) scale(0.9);
+  }
+
+  100% {
+    transform: translate(20%, -25%) scale(1.15);
+  }
+}
+
+@keyframes flow4 {
+  0% {
+    transform: translate(15%, -25%) scale(1);
+  }
+
+  100% {
+    transform: translate(-20%, 20%) scale(1.12);
+  }
+}
+
+@media (min-width: 2561px) {
+  .wave{
+      filter: blur(155px);
+    }
+}
+
+/* =====================
+   CELULAR PEQUENO
+===================== */
+@media (max-width: 480px) and (max-width: 768px) {
+    .wave{
+      filter: blur(45px);
+    }
+}

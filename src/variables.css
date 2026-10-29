@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+
+    --text: #F2F1EA;
+    --text-p: #e4e3df;
+    --text-two: #a1c29f;
+    --color-primary: #434738;
+    --color-secundary: #7e9b58;
+
+    /*
+       #434738
+       
+       #7a8660
+
+       #39452e
+
+       #9ad986
+
+       #7e9b58
+       
+       #9bc18b
+   */
+
+
+    --font-text: "Syne", sans-serif;
+    --font-main: "Urbanist", sans-serif;
+}
