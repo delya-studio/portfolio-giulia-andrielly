@@ -342,7 +342,7 @@ project-number-wrapper{
         padding: 20px 8px;
         border-radius: 90px;
     }
-    .project-closed span:first-child{ font-size: 26px; writing-mode: horizontal-tb; }
+    .project-closed span:first-child{ font-size: 26px; writing-mode: horizontal-tb; transform: none; rotate: none;}
     .project-closed .project-number{ width: 66px; height: 66px; font-size: 28px; }
 }
 
@@ -395,7 +395,7 @@ project-number-wrapper{
         background-color: var(--color-secundary);
         border-radius: 40px;
     }
-    .project-closed span:first-child{ writing-mode: horizontal-tb; }
+    .project-closed span:first-child{ writing-mode: horizontal-tb; transform: none; rotate: none; }
     .project-closed .project-number{ width: 48px; height: 48px; }
 }
 
