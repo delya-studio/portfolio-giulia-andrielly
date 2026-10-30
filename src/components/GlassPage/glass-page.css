@@ -49,8 +49,8 @@
 ===================== */
 @media (min-width: 2561px) {
  .glass-page{
-  backdrop-filter: blur(180px);
-  -webkit-backdrop-filter: blur(180px);
+  backdrop-filter: blur(190px);
+  -webkit-backdrop-filter: blur(190px);
 
   margin: 30px;
   height: calc(100dvh - 68px);
