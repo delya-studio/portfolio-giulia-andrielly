@@ -78,7 +78,7 @@ export function Contact({language}){
                     <div className="content-links_sociais">
                         <div className="links_sociais fade-left delay-3">
                             <FaWhatsapp color="#F2F1EA" />
-                            <a href=" https://wa.me/5541987981810" className='icon-redes'>
+                            <a href=" https://wa.me/5541987981860" className='icon-redes'>
                                 <ArrowRight color="#F2F1EA" />
                             </a>
                         </div>
