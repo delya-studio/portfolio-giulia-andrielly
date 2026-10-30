@@ -78,19 +78,19 @@ export function Contact({language}){
                     <div className="content-links_sociais">
                         <div className="links_sociais fade-left delay-3">
                             <FaWhatsapp color="#F2F1EA" />
-                            <a href="" className='icon-redes'>
+                            <a href=" https://wa.me/5541987981810" className='icon-redes'>
                                 <ArrowRight color="#F2F1EA" />
                             </a>
                         </div>
                         <div className="links_sociais fade-left delay-3">
                             <FaLinkedinIn color="#F2F1EA"/>
-                            <a href="" className='icon-redes'>
+                            <a href="https://www.linkedin.com/in/giulia-andrielly-oliveira-duarte-de-liz-182928282/" className='icon-redes'>
                                 <ArrowRight color="#F2F1EA" />
                             </a>
                         </div>
                         <div className="links_sociais fade-left delay-4">
                             <FaGithub color="#F2F1EA"/>
-                            <a href="" className='icon-redes'>
+                            <a href="https://github.com/delya-studio" className='icon-redes'>
                                 <ArrowRight color="#F2F1EA" />
                             </a>
                         </div>
