@@ -80,7 +80,7 @@ export function Info({language, setLanguage}) {
                                     {translations[language].infoPage.infoTitleTwo}
                                 </span>
                                 <span className="block_text-info">
-                                    Single Page Application (SPA / Web 2.0)
+                                    Single Page Application (SPA)
                                 </span>
                             </div>
                         </div>
