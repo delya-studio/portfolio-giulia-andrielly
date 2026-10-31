@@ -184,10 +184,10 @@ export const translations = {
                 ]
             },
 
-            infoTitleOne: "Desing & Site",
+            infoTitleOne: "Design & Site",
             infoTextOne: "Desenvolvido por Giulia Andrielly ",
 
-            infoTitleTwo: "Modelo de desnvolvimento",
+            infoTitleTwo: "Modelo de desenvolvimento",
             infoTitleThree: "Tecnologia utilizada ",
         }
 
